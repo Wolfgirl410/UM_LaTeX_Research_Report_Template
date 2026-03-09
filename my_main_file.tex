@@ -1,1 +1,152 @@
+```latex
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}% Encoding
+\usepackage{times}% Font (Times New Roman)
+\usepackage{setspace}% Spacing
+\doublespacing
+\usepackage[top=2cm, right=2cm, left=4cm, bottom=2cm]{geometry}% Page Margins
+\usepackage{amssymb,amsmath}% Math
+\usepackage{graphicx}% Graphics
+\graphicspath{{IMAGES/}}% Graphics
+\usepackage{float}% Figures and tables
+\usepackage{chngcntr}% Figures and tables
+\counterwithin{figure}{section}% Figures and tables
+\usepackage{enumitem}% Lists
+\usepackage{listings}% Code listings
+\usepackage{tikz}% TikZ diagrams
+\usepackage[backend=biber]{biblatex}% Bibliography
+\addbibresource{bible.bib}% Bibliography
+\usepackage{titlesec}% Title formatting
 
+\titleformat{\chapter}[display]
+{\huge\centering}
+{Chapter \thechapter}
+{0ex}
+
+\setcounter{secnumdepth}{4}
+\usepackage{hyperref}
+
+\begin{document}
+\begin{titlepage}
+\centering
+
+\vspace{2cm}
+
+{\Huge \textbf \arial {EARLY DETECTION OF STUDENT BURNOUT USING LEARNING ANALYTICS AND PSYCHOLOGICAL INDICATORS}}
+
+\vspace{2cm}
+
+{\Large MARIA MOHAN JACOB}
+
+\vspace{1cm}
+
+{\Large Supervisor: DR. BRYAN RAJ}
+
+\vfill
+
+{\Large
+RESEARCH REPORT SUBMITTED TO THE FACULTY OF COMPUTER SCIENCE AND INFORMATION TECHNOLOGY, UNIVERSITY OF MALAYA, IN PARTIAL FULFILMENT OF THE REQUIREMENTS FOR THE DEGREE OF MASTER OF DATA SCIENCE
+}
+
+\vspace{1cm}
+
+{\Large Bachelor of XXXX}
+
+\vspace{2cm}
+
+{\Large 2026}
+
+\end{titlepage}
+
+
+
+
+
+%--------------------------------
+% Abstract
+%--------------------------------
+\chapter*{Abstract}
+
+This section contains the abstract of the study. The abstract should briefly describe the problem, methodology, and expected outcomes of the research.
+
+%--------------------------------
+% Table of Contents
+%--------------------------------
+\tableofcontents
+\newpage
+
+%--------------------------------
+% Chapter 1
+%--------------------------------
+\chapter{Introduction}
+
+\section{Background of Study}
+
+Write your introduction here. The text is double spaced.
+
+\section{Problem Statement}
+
+Example:
+
+Student burnout is becoming a growing concern in modern education systems. Early detection methods are necessary to prevent academic disengagement and mental health deterioration.
+
+\section{Research Objectives}
+
+\begin{enumerate}
+\item To identify behavioral indicators of student burnout.
+\item To develop a predictive model for early detection.
+\item To evaluate the effectiveness of the proposed model.
+\end{enumerate}
+
+%--------------------------------
+% Chapter 2
+%--------------------------------
+\chapter{Literature Review}
+
+\section{Student Burnout}
+
+Example citation:
+
+\cite{smith2020}
+
+%--------------------------------
+% Example Figure
+%--------------------------------
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{example}
+\caption{Example figure}
+\end{figure}
+
+%--------------------------------
+% Example Table (single spaced)
+%--------------------------------
+\begin{table}[H]
+\centering
+\singlespacing
+\begin{tabular}{|c|c|}
+\hline
+Indicator & Description \\
+\hline
+Attendance & Class participation \\
+Assignments & Submission patterns \\
+\hline
+\end{tabular}
+\caption{Sample table}
+\end{table}
+
+%--------------------------------
+% Chapter 3
+%--------------------------------
+\chapter{Methodology}
+
+Describe your dataset, methods, and tools.
+
+%--------------------------------
+% References (single spaced)
+%--------------------------------
+\singlespacing
+\printbibliography
+
+\end{document}
+```
